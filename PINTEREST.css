@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding-block: 15px;
+}
+
+main{
+    width: 90vw;
+    min-height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    margin: auto;
+    font-size:30px;
+    background-color: red;
+    color: aliceblue;
+}
+
+.contenedor{
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    grid-template-rows: 50px repeat(3, 1fr)100px;
+    border: 1%;
+    grid-template-areas: 
+        "FOTO1 FOTO2 FOTO3 FOTO4 FOTO5 FOTO6 FOTO7"
+        "FOTO8 FOTO9 FOTO10 FOTO11 FOTO12 FOTO13 FOTO14"
+        "FOTO15 FOTO16 FOTO17 FOTO18 FOTO19 FOTO20 FOTO21"
+        "FOTO22 FOTO23 FOTO24 FOTO25 FOTO26 FOTO27 FOTO28"
+        "FOTO29 FOTO30 FOTO31 FOTO32 FOTO33 FOTO34 FOTO35"
+        "FOTO36 FOTO37 FOTO38 FOTO39 FOTO40 FOTO41 FOTO42"
+
+}
+
+.contenedor > dir{
+    background-color: cornflowerblue;
+    border: 1px solid black ;
+
+}
+
+.item1{
+    grid-area: FOTO1;
+    background-color: blue;
+}
+
+.item2{
+    grid-area: FOTO2;
+    background-color: blueviolet;
+}
+
+.item3{
+    grid-area: FOTO3;
+    background-color: aqua;
+}
+
+.item4{
+    grid-area: FOTO4;
+    background-color: green;
+}
+
+.item5{
+    grid-area: FOTO5;
+    background-color: yellow;
+}
+
+.item6{
+    grid-area: FOTO6;
+    background-color: orange;
+}
+
+.item7{
+    grid-area: FOTO7;
+    background-color: orange;
+}
+
+.item8{
+    grid-area: FOTO8;
+    background-color: orange;
+}
+
+.item9{
+    grid-area: FOTO9;
+    background-color: orange;
+}
+
+.item10{
+    grid-area: FOTO10;
+    background-color: orange;
+}
+
+.item11{
+    grid-area: FOTO11;
+    background-color: orange;
+}
+
+.item12{
+    grid-area: FOTO12;
+    background-color: orange;
+}
+
+.item13{
+    grid-area: FOTO13;
+    background-color: orange;
+}
+
+.item14{
+    grid-area: FOTO14;
+    background-color: orange;
+}
+
+.item15{
+    grid-area: FOTO15;
+    background-color: orange;
+}
+
+.item16{
+    grid-area: FOTO16;
+    background-color: orange;
+}
+
+.item17{
+    grid-area: FOTO17;
+    background-color: orange;
+}
+
+.item18{
+    grid-area: FOTO18;
+    background-color: orange;
+}
+
+.item19{
+    grid-area: FOTO19;
+    background-color: orange;
+}
+
+.item20{
+    grid-area: FOTO20;
+    background-color: orange;
+}
+
+.item21{
+    grid-area: FOTO21;
+    background-color: orange;
+}
+
+.item22{
+    grid-area: FOTO22;
+    background-color: orange;
+}
+
+.item23{
+    grid-area: FOTO23;
+    background-color: orange;
+}
+
+.item24{
+    grid-area: FOTO24;
+    background-color: orange;
+}
+
+.item25{
+    grid-area: FOTO25;
+    background-color: orange;
+}
+
+.item26{
+    grid-area: FOTO26;
+    background-color: orange;
+}
+
+.item27{
+    grid-area: FOTO27;
+    background-color: orange;
+}
+
+.item28{
+    grid-area: FOTO28;
+    background-color: orange;
+}
+
+.item29{
+    grid-area: FOTO29;
+    background-color: orange;
+}
+
+.item30{
+    grid-area: FOTO30;
+    background-color: orange;
+}
+
+.item31{
+    grid-area: FOTO31;
+    background-color: orange;
+}
+
+.item32{
+    grid-area: FOTO32;
+    background-color: orange;
+}
+
+.item33{
+    grid-area: FOTO33;
+    background-color: orange;
+}
+
+.item34{
+    grid-area: FOTO34;
+    background-color: orange;
+}
+
+.item35{
+    grid-area: FOTO35;
+    background-color: orange;
+}
+
+.item36{
+    grid-area: FOTO36;
+    background-color: orange;
+}
+
+.item37{
+    grid-area: FOTO37;
+    background-color: orange;
+}
+
+.item38{
+    grid-area: FOTO38;
+    background-color: orange;
+}
+
+.item39{
+    grid-area: FOTO39;
+    background-color: orange;
+}
+.item40{
+    grid-area: FOTO40;
+    background-color: orange;
+}
+
+.item41{
+    grid-area: FOTO41;
+    background-color: orange;
+}
+
+.item42{
+    grid-area: FOTO42;
+    background-color: orange;
+}

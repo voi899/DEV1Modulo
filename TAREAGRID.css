@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding-block: 15px;
+}
+
+main{
+    width: 90vw;
+    min-height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    margin: auto;
+    font-size:30px;
+    background-color: red;
+    color: aliceblue;
+}
+
+.contenedor{
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 50px repeat(3, 1fr)100px;
+    grid-template-areas: 
+        "HEADER HEADER HEADER"
+        "SIDEBAR CONTENIDO CONTENIDO"
+        "SIDEBAR CONTENIDO CONTENIDO"
+        "SIDEBAR EXTRA1 EXTRA2"
+        "FOOTER FOOTER FOOTER"
+}
+
+.contenedor > dir{
+    background-color: cornflowerblue;
+    border: 1px solid black ;
+
+}
+
+.item1{
+    grid-area: HEADER;
+    background-color: blue;
+}
+
+.item2{
+    grid-area: SIDEBAR;
+    background-color: blueviolet;
+}
+
+.item3{
+    grid-area: CONTENIDO;
+    background-color: aqua;
+}
+
+.item4{
+    grid-area: EXTRA1 ;
+    background-color: green;
+}
+
+.item5{
+    grid-area: EXTRA2 ;
+    background-color: yellow;
+}
+
+.item6{
+    grid-area: FOOTER;
+    background-color: orange;
+}
+
+@media screen and (max-width: 960px) and (min-width: 480px){
+
+    .contenedor{
+        flex-direction: column;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px repeat(3, 1fr)100px;
+        grid-template-areas: 
+            "HEADER HEADER"
+            "SIDEBAR SIDEBAR"
+            "CONTENIDO CONTENIDO"
+            "EXTRA1 EXTRA2"
+            "FOOTER FOOTER"
+    }
+    .item1{
+        grid-area: HEADER;
+        background-color: rgb(255, 196, 0);
+       
+    }
+    
+    .item2{
+        grid-area: SIDEBAR;
+        background-color: rgb(226, 95, 43);
+  
+    }
+    
+    .item3{
+        grid-area: CONTENIDO;
+        background-color: rgb(255, 0, 179);
+
+    }
+    
+    .item4{
+        grid-area: EXTRA1 ;
+        background-color: rgb(77, 0, 128);
+        
+    }
+    
+    .item5{
+        grid-area: EXTRA2 ;
+        background-color: rgb(255, 123, 0);
+        
+
+    }
+    
+    .item6{
+        grid-area: FOOTER;
+        background-color: rgb(0, 140, 255);
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 0px){
+
+    .contenedor{
+        flex-direction: column;
+        grid-template-columns:  100%;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "HEADER"
+            "SIDEBAR"
+            "CONTENIDO"
+            "EXTRA1"
+            "EXTRA2"
+            "FOOTER"
+    }
+    .item1{
+        grid-area: HEADER;
+        background-color: rgb(255, 196, 0);
+      
+    }
+    
+    .item2{
+        grid-area: SIDEBAR;
+        background-color: rgb(226, 95, 43);
+    
+    }
+    
+    .item3{
+        grid-area: CONTENIDO;
+        background-color: rgb(255, 0, 179);
+  
+    }
+    
+    .item4{
+        grid-area: EXTRA1 ;
+        background-color: rgb(77, 0, 128);
+ 
+    }
+    
+    .item5{
+        grid-area: EXTRA2 ;
+        background-color: rgb(255, 123, 0);
+    
+    }
+    
+    .item6{
+        grid-area: FOOTER;
+        background-color: rgb(0, 140, 255);
+ 
+    }
+}

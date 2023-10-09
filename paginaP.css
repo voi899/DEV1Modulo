@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin: 0;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border:0;
+    flex: 1;
+
+}
+
+.padre{
+    background-color: blue;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.hijo1{
+    background-color: black;
+    width: 30%;
+    height: 150px;
+}
+
+.hijo2{
+    background-color: red;
+    width: 24vw;
+    height: 150px;
+}
+
+.hijo3{
+    background-color: green;
+    width: 30%;
+    height: 150px;
+}
+
+/*@media screen and (max-width: 700px){
+
+    .padre{
+
+    }
+
+    .hijo1 {
+        background-color: white;
+    }
+
+    .hijo2{
+        background-color: pink;
+    }
+
+    .hijo3{
+        background-color: blueviolet;
+    }
+}*/
+
+@media screen and (max-width: 700px){
+
+    .padre{
+        flex-direction: column;
+
+    }
+
+    .hijo1 {
+        background-color: white;
+        width: 100%;
+    }
+
+    .hijo2{
+        background-color: pink;
+        width: 100%;
+    }
+
+    .hijo3{
+        background-color: blueviolet;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .padre{
+        flex-direction:column;
+        width: 100%;
+    }
+    .hijo1 {
+        background-color: rgb(255, 255, 255);
+        height: 50%;
+        width: 100%;
+    }
+
+    .hijo2{
+        background-color: rgb(210, 255, 192);
+        width: 100%;
+        height: 50%;
+    }
+
+    .hijo3{
+        background-color: rgb(192, 226, 43);
+        width: 100%;
+        height: 50%;
+    }
+}

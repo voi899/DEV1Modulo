@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <h1>Titulo 1</h1>
+            <h1>Titulo 2</h1>
+            <p>Parrafo</p>
+
+        </section>
+        <section>
+            <form>
+                <input 
+                type ="text"
+                name ="nombre"
+                placeholder ="Ingresa tu nombre"
+                maxlength="10"
+                minlength="2"
+                required
+                />
+                <input
+                type ="password"
+                name ="password" 
+                placeholder ="Ingresa tu password"
+                maxlength ="10"
+                minlength ="5"
+                required
+                />
+                <input
+                type ="number"
+                name ="edad"
+                maxlength ="200"
+                minlength ="2"
+                placeholder ="edad"
+                required
+                />
+                <input
+                type ="checkbox"
+                name ="condiciones"
+                required
+                />
+                <!--una forma de usar una label-->
+                <label>
+                    aceptas nuestras condiciones
+                    <input 
+                    type ="checkbox"
+                    name ="condiciones"
+                    required
+                    />
+                </label>
+                <!--otra forma de usar el label-->
+                <label for="falma">Aceptas los terminos de vender tu alma?</label>
+                <input 
+                   id="falma"
+                   type ="checkbox"
+                   name ="alma"
+                   required
+                />
+                <button type="submit">
+                    Iniciar secion
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
